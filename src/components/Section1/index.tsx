@@ -19,29 +19,32 @@ function Section1() {
                     acadêmica e desenvolvimento de projetos ligados à minha formação.
                 </h2>
 
-                <div className="w-full md:w-250 mt-8 md:mt-5 flex flex-col items-center">
-                    <div className="flex flex-col md:flex-row w-full gap-6 md:gap-8 overflow-visible">
-                        <div className="w-full md:w-1/2">
+                <div className="w-full mt-5 md:mt-5 flex flex-col items-center">
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                        <div className="w-90 justify-center">
                             <Cards
                                 title="Tech Stack"
                                 technologies={[
                                     { name: "Next.js", image: "/img/nextjs.svg" },
-                                    { name: "React", image: "/img/react.png" },
+                                    { name: "React", image: "/img/react.png"},
                                     { name: "JavaScript", image: "/img/js.png" },
                                     { name: "HTML", image: "/img/html.png" },
-                                    { name: "CSS", image: "/img/css.png" }
+                                    { name: "CSS", image: "/img/css.png" },
+                                    { name: "Vite", image: "/img/vitejs.svg" },
+                                    { name: "TaiwindCSS", image: "/img/Tallwind.png" },
+                                    { name: "Git", image: "/img/git.svg" }
                                 ]}
                             />
                         </div>
-                        <div className="w-full md:w-1/2">
+                        <div className="w-full md:w-90">
                             <Cards
                                 title="Tools"
                                 technologies={[
-                                    { name: "Next.js", image: "/img/nextjs.svg" },
-                                    { name: "React", image: "/img/react.png" },
-                                    { name: "JavaScript", image: "/img/js.png" },
-                                    { name: "HTML", image: "/img/html.png" },
-                                    { name: "CSS", image: "/img/css.png" }
+                                    { name: "VScode", image: "/img/vs.png" },
+                                    { name: "Photoshop", image: "/img/photoshop.png" },
+                                    { name: "Figma", image: "/img/figma.png" },
+                                    { name: "CorelDRAW", image: "/img/coreldraw.svg" },
+                                    { name: "Illustrator", image: "/img/Illustrator.png" }
                                 ]} 
                             />
                         </div>
