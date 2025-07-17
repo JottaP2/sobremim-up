@@ -4,6 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --mainbackground: #1e1e1e;
 }
 
 @theme inline {
@@ -21,7 +22,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--mainbackground);
   color: var(--foreground);
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }

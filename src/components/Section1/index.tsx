@@ -1,61 +1,48 @@
 import Image from "next/image";
-import Cards from "../Cards";
+import Header from "./Header";
+import { Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 function Section1() {
-    return (
-        <>
-            <main className="bg-zinc-950 w-full min-h-screen flex flex-col items-center text-white text-center px-4 py-8 md:p-16 lg:p-30 overflow-hidden">
-                <Image
-                    src="/img/Jotta.PNG"
-                    alt="Picture of the author"
-                    width={200}
-                    height={200}
-                    className="rounded-full mb-5 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[200px] lg:h-[200px] object-cover"
-                />
-                <h1 className="text-3xl md:text-4xl font-medium">Olá, sou o jotta!</h1>
-                <h2 className="text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl font-light mt-4 text-sm sm:text-base md:text-lg">
-                    tenho 20 anos e sou estudante de Sistemas de Informação pela UFAL. Sou apaixonado por tecnologia e,
-                    atualmente, estou focado em aprofundar meus conhecimentos em programação front-end, pesquisa
-                    acadêmica e desenvolvimento de projetos ligados à minha formação.
-                </h2>
-
-                <div className="w-full mt-5 md:mt-5 flex flex-col items-center">
-                    <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-                        <div className="w-90 justify-center">
-                            <Cards
-                                title="Tech Stack"
-                                technologies={[
-                                    { name: "Next.js", image: "/img/nextjs.svg" },
-                                    { name: "React", image: "/img/react.png"},
-                                    { name: "JavaScript", image: "/img/js.png" },
-                                    { name: "HTML", image: "/img/html.png" },
-                                    { name: "CSS", image: "/img/css.png" },
-                                    { name: "Vite", image: "/img/vitejs.svg" },
-                                    { name: "TaiwindCSS", image: "/img/Tallwind.png" },
-                                    { name: "Git", image: "/img/git.svg" }
-                                ]}
-                            />
-                        </div>
-                        <div className="w-full md:w-90">
-                            <Cards
-                                title="Tools"
-                                technologies={[
-                                    { name: "VScode", image: "/img/vs.png" },
-                                    { name: "Photoshop", image: "/img/photoshop.png" },
-                                    { name: "Figma", image: "/img/figma.png" },
-                                    { name: "CorelDRAW", image: "/img/coreldraw.svg" },
-                                    { name: "Illustrator", image: "/img/Illustrator.png" }
-                                ]} 
-                            />
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer className="bg-zinc-950 flex items-center justify-center text-white text-center p-2">
-                <h1 className="">jotta © 2025 - Todos os direitos reservados.</h1>
-            </footer>
-        </>
-    );
+  return (
+    <>
+      <main className="pt-20 px-4 sm:px-6 md:px-8 lg:flex justify-center lg:p-20">
+        <div className="flex flex-col sm:gap-5 md:gap-12 lg:flex lg:flex-row items-center justify-around gap-5 max-w-full">
+          <div className="flex flex-col text-center sm:text-left">
+            <h5 className="text-sm sm:text-base md:text-lg">My name is</h5>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-[#3EB46C] font-bold">
+              João Paulo
+            </h1>
+            <p className="w-full sm:w-96 md:w-120 lg:w-150 text-base sm:text-lg md:text-xl font-light text-[#425D4D] mt-4">
+              Estudante de Sistemas de Informação, design gráfico e focado no
+              desenvolvimento web utilizando Next Js, Tailwind e typescript.
+            </p>
+            <div className="flex gap-5 mt-5">
+              <a href="https://www.instagram.com/joao.marinhop/">
+                <Instagram className="w-6 h-6 text-[#3EB46C]" />
+              </a>
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-marinho-santos-999b29314/">
+                <Linkedin className="w-6 h-6 text-[#3EB46C]" />
+              </a>
+              <a href="https://github.com/JottaP2">
+                <Github className="w-6 h-6 text-[#3EB46C]" />
+              </a>
+            </div>
+          </div>
+          <div className="flex justify-center items-center p-2 border-2 sm:border-3 md:border-3 border-[#3EB46C] rounded-xl sm:rounded-2xl mt-8 sm:mt-6 md:mt-4 lg:mt-0">
+            <Image
+              src="/img/perfiljotta.jpg"
+              alt="foto_JoãoPaulo"
+              width={1920}
+              height={1080}
+              className="rounded-lg w-64 sm:w-80 md:w-96 lg:w-120 h-auto"
+            />
+          </div>
+        </div>
+      </main>
+    </>
+  );
 }
 
 export default Section1;
