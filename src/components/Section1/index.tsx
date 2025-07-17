@@ -6,7 +6,8 @@ import { Instagram } from "lucide-react";
 
 function Section1() {
   return (
-    <>
+    <div>
+      <Header />
       <main className="pt-20 px-4 sm:px-6 md:px-8 lg:flex justify-center lg:p-20">
         <div className="flex flex-col sm:gap-5 md:gap-12 lg:flex lg:flex-row items-center justify-around gap-5 max-w-full">
           <div className="flex flex-col text-center sm:text-left">
@@ -41,7 +42,7 @@ function Section1() {
           </div>
         </div>
       </main>
-    </>
+    </div>
   );
 }
 
